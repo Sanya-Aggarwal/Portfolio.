@@ -28,10 +28,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);
 ::-webkit-scrollbar{width:3px;}
 ::-webkit-scrollbar-track{background:var(--cream2);}
 ::-webkit-scrollbar-thumb{background:var(--burg);border-radius:2px;}
- 
+
 /* ── PROGRESS ── */
 #prog{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--burg),var(--gold));z-index:9999;}
- 
+
 /* ── NAV ── */
 nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-items:center;justify-content:space-between;padding:16px 48px;transition:all .4s;}
 nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0 2px 20px rgba(92,26,40,0.08);}
@@ -48,7 +48,7 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
 .nav-drawer ul{list-style:none;display:flex;flex-direction:column;gap:22px;}
 .nav-drawer a{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .3s;}
 .nav-drawer a:hover{color:var(--burg);}
- 
+
 /* ── FLOAT BTNS ── */
 #backtop{position:fixed;bottom:28px;right:28px;z-index:400;width:42px;height:42px;border-radius:50%;border:1.5px solid var(--burg);background:var(--cream);color:var(--burg);display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;transform:translateY(10px);transition:all .4s;font-size:16px;}
 #backtop.show{opacity:1;transform:translateY(0);}
@@ -56,7 +56,7 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
 #fcta{position:fixed;bottom:28px;left:28px;z-index:400;padding:10px 22px;border-radius:30px;background:var(--burg);color:var(--cream);font-size:10px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;opacity:0;transform:translateY(10px);transition:all .4s;font-weight:600;}
 #fcta.show{opacity:1;transform:translateY(0);}
 #fcta:hover{background:var(--burg2);}
- 
+
 /* ──────────────────────────────────────────
    HERO — COVER SLIDE
 ──────────────────────────────────────────── */
@@ -88,7 +88,7 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
 .hs6{top:80%;left:30%;--fs:18px;--td:3s;--dl:.8s;}
 .hs7{top:20%;left:40%;--fs:10px;--td:6s;--dl:2s;}
 .hs8{top:60%;right:20%;--fs:14px;--td:4s;--dl:.6s;}
- 
+
 .hero-inner{position:relative;z-index:2;text-align:center;max-width:680px;}
 .hero-script{
   font-family:'Cormorant Garamond',serif;
@@ -130,12 +130,12 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
 .hbtn-p:hover{background:var(--gold2);transform:translateY(-2px);}
 .hbtn-s{padding:13px 32px;border-radius:30px;border:1.5px solid rgba(255,255,255,0.4);color:rgba(255,255,255,0.85);font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:600;text-decoration:none;transition:all .3s;}
 .hbtn-s:hover{border-color:var(--gold2);color:var(--gold2);}
- 
+
 /* scroll hint */
 .scroll-hint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,0.35);font-size:9px;letter-spacing:2px;text-transform:uppercase;}
 .scroll-line{width:1px;height:44px;background:linear-gradient(to bottom,rgba(255,255,255,.3),transparent);animation:scrollDown 1.8s ease-in-out infinite;}
 @keyframes scrollDown{0%{transform:scaleY(0);transform-origin:top;}50%{transform:scaleY(1);transform-origin:top;}51%{transform-origin:bottom;}100%{transform:scaleY(0);transform-origin:bottom;}}
- 
+
 /* ──────────────────────────────────────────
    TICKER
 ──────────────────────────────────────────── */
@@ -145,19 +145,19 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
 .tick-item em{color:var(--burg);font-style:normal;}
 .ticker:hover .tick-track{animation-play-state:paused;}
 @keyframes tick{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
- 
+
 /* ──────────────────────────────────────────
    SLIDE BASE — all sections look like slides
 ──────────────────────────────────────────── */
 .slide{padding:80px 0;position:relative;}
 .slide-inner{max-width:1100px;margin:0 auto;padding:0 40px;}
- 
+
 /* section heading style */
 .slide-label{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--burg-light);margin-bottom:10px;display:flex;align-items:center;gap:10px;}
 .slide-label::before,.slide-label::after{content:'★';font-size:7px;}
 .slide-title{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,54px);font-weight:700;line-height:1.05;margin-bottom:48px;color:var(--text);}
 .slide-title em{font-style:italic;color:var(--burg);}
- 
+
 /* ──────────────────────────────────────────
    ABOUT — "A LITTLE BIT ABOUT ME" SLIDE
 ──────────────────────────────────────────── */
@@ -171,7 +171,7 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
 .about-text h2 em{font-style:normal;font-weight:600;color:var(--burg);}
 .about-text p{font-size:14px;line-height:1.95;color:#3a2030;font-weight:300;margin-bottom:14px;}
 .about-text strong{color:var(--burg);font-weight:600;}
- 
+
 /* checklist "Why Me" */
 .why-me-card{
   background:var(--burg);
@@ -201,40 +201,40 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
   display:flex;align-items:center;justify-content:center;
   font-size:10px;color:var(--gold2);background:rgba(255,255,255,0.08);
 }
- 
+
 /* stars deco floating on about section */
 .about-star{position:absolute;color:var(--burg);opacity:.08;font-size:var(--as,24px);pointer-events:none;}
- 
+
 /* ──────────────────────────────────────────
    WHAT'S IN MY BAG — skills section
 ──────────────────────────────────────────── */
 #skills{background:var(--burg);position:relative;overflow:hidden;}
 #skills::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.04) 1.5px,transparent 1.5px);background-size:24px 24px;}
- 
+
 /* lace border top */
 #skills::after{
   content:'';position:absolute;top:0;left:0;right:0;height:20px;
   background:radial-gradient(circle at 14px 0,transparent 8px,rgba(255,255,255,0.12) 8px,rgba(255,255,255,0.12) 12px,transparent 12px) 0 0/28px 20px;
   background-repeat:repeat-x;
 }
- 
+
 .skills-inner{position:relative;z-index:2;}
 .skills-heading{
   font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,48px);
   font-weight:700;color:var(--cream);margin-bottom:8px;
 }
 .skills-sub{font-size:12px;letter-spacing:1px;color:rgba(255,255,255,.5);margin-bottom:52px;font-weight:300;}
- 
+
 /* bag diagram */
 .bag-diagram{display:flex;flex-direction:column;align-items:center;position:relative;}
 .bag-diagram-wrap{position:relative;width:100%;max-width:860px;margin:0 auto;height:480px;display:flex;align-items:center;justify-content:center;}
- 
+
 /* the SVG bag in center */
 .bag-svg-wrap{position:absolute;left:50%;top:50%;transform:translate(-50%,-48%);z-index:10;cursor:pointer;}
 .bag-svg-wrap svg{width:220px;height:258px;filter:drop-shadow(0 16px 40px rgba(74,15,28,.5));transition:filter .4s,transform .5s cubic-bezier(.34,1.4,.64,1);}
 .bag-svg-wrap:hover svg{filter:drop-shadow(0 24px 56px rgba(74,15,28,.65));transform:translateY(-6px) scale(1.03);}
 .bag-label-center{position:absolute;bottom:-32px;left:50%;transform:translateX(-50%);white-space:nowrap;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:rgba(255,255,255,.55);letter-spacing:1px;}
- 
+
 /* skill nodes */
 .skill-node{
   position:absolute;
@@ -251,7 +251,7 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
 }
 @keyframes skillFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-6px);}}
 .skill-node:hover{background:rgba(255,255,255,0.2);border-color:var(--gold2);color:var(--gold2);transform:scale(1.06);}
- 
+
 /* positions around the bag */
 .sn-1{top:8%;left:4%;--sf:5s;--sfd:0s;}
 .sn-2{top:2%;left:38%;--sf:6s;--sfd:.4s;}
@@ -261,24 +261,24 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
 .sn-6{bottom:8%;left:4%;--sf:6.5s;--sfd:1.5s;}
 .sn-7{bottom:2%;left:38%;--sf:5.2s;--sfd:.6s;}
 .sn-8{bottom:8%;right:5%;--sf:6.8s;--sfd:1s;}
- 
+
 /* connector lines SVG */
 .connector-svg{position:absolute;inset:0;pointer-events:none;z-index:5;}
 .connector-svg line{stroke:rgba(255,255,255,0.12);stroke-width:1;stroke-dasharray:4 4;}
- 
+
 /* proficiency bars below bag */
 .skill-bars{margin-top:48px;max-width:700px;margin-left:auto;margin-right:auto;}
 .bar-row{display:flex;flex-direction:column;gap:5px;margin-bottom:14px;}
 .bar-top{display:flex;justify-content:space-between;font-size:11px;color:rgba(255,255,255,.65);}
 .bar-track{height:4px;background:rgba(255,255,255,.1);border-radius:2px;overflow:hidden;}
 .bar-fill{height:100%;background:linear-gradient(90deg,var(--burg-light),var(--gold));border-radius:2px;width:0;transition:width 1.6s ease;}
- 
+
 /* ──────────────────────────────────────────
    HOW I WORK — PROCESS (BAG opens)
 ──────────────────────────────────────────── */
 #process{background:var(--cream2);overflow:hidden;}
 .proc-layout{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;}
- 
+
 /* left: striped content-example style */
 .proc-left{
   background:var(--burg);
@@ -299,7 +299,7 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
 .proc-tag-list{margin-top:20px;display:flex;flex-direction:column;gap:7px;}
 .proc-tag{font-size:11px;color:rgba(255,255,255,.7);display:flex;align-items:center;gap:8px;}
 .proc-tag::before{content:'•';color:var(--gold2);}
- 
+
 /* right: step cards */
 .proc-steps{display:flex;flex-direction:column;gap:10px;}
 .pstep{
@@ -316,17 +316,17 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
 .pstep-body{}
 .pstep-title{font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px;}
 .pstep-desc{font-size:11px;color:#6b3040;line-height:1.6;}
- 
+
 /* ──────────────────────────────────────────
    CAMPAIGNS — projects
 ──────────────────────────────────────────── */
 #projects{background:var(--cream);}
- 
+
 /* filter tabs */
 .filter-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:32px;}
 .ftab{padding:7px 18px;border-radius:30px;border:1.5px solid var(--border);font-size:11px;letter-spacing:.5px;color:var(--muted);background:var(--cream2);cursor:pointer;transition:all .3s;font-weight:500;}
 .ftab.active,.ftab:hover{background:var(--burg);color:var(--cream);border-color:var(--burg);}
- 
+
 /* featured card — burgundy */
 .feat-card{
   background:var(--burg);border-radius:20px;overflow:hidden;
@@ -346,7 +346,7 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
 }
 .feat-big{font-family:'Cormorant Garamond',serif;font-size:72px;font-weight:600;color:var(--cream);line-height:1;}
 .feat-sub{font-size:10px;color:rgba(255,255,255,.5);letter-spacing:2px;text-transform:uppercase;margin-top:8px;}
- 
+
 .feat-content{background:rgba(0,0,0,.15);padding:40px 32px;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:1;}
 .fc-brand{font-size:9px;color:var(--gold2);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;}
 .fc-title{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--cream);margin-bottom:12px;line-height:1.2;}
@@ -356,7 +356,7 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
 .fc-chip:hover{border-color:var(--gold2);color:var(--gold2);}
 .fc-result{padding:12px 16px;background:rgba(255,255,255,.08);border-radius:10px;border-left:2px solid var(--gold);font-size:12px;color:rgba(255,255,255,.7);line-height:1.6;}
 .fc-result strong{color:var(--gold2);}
- 
+
 /* project cards grid */
 .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
 .pcard{
@@ -378,7 +378,7 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
 .pc-lbl{font-size:8px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-top:2px;}
 .pc-btn{padding:7px 16px;border-radius:20px;border:1.5px solid var(--border);background:transparent;color:var(--muted);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;transition:all .3s;font-family:'DM Sans',sans-serif;font-weight:600;}
 .pc-btn:hover{background:var(--burg);color:var(--cream);border-color:var(--burg);}
- 
+
 /* ──────────────────────────────────────────
    MODAL
 ──────────────────────────────────────────── */
@@ -406,7 +406,7 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
 .mbadge{padding:5px 12px;border-radius:20px;font-size:10px;font-weight:600;background:rgba(92,26,40,.07);color:var(--burg);border:1px solid rgba(92,26,40,.15);}
 @keyframes modalPop{from{opacity:0;transform:scale(.93) translateY(16px);}to{opacity:1;transform:none;}}
 .modal-overlay.open .mbox{animation:modalPop .4s cubic-bezier(.34,1.56,.64,1) both;}
- 
+
 /* ──────────────────────────────────────────
    BRANDS SLIDE — phone mockup grid
 ──────────────────────────────────────────── */
@@ -414,7 +414,7 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
 .brands-header-row{display:flex;align-items:baseline;gap:20px;margin-bottom:40px;}
 .brands-header-row h2{font-family:'Playfair Display',serif;font-size:clamp(32px,4vw,52px);font-weight:700;color:var(--text);}
 .brands-intro{font-size:14px;color:var(--muted);font-weight:300;max-width:500px;line-height:1.7;}
- 
+
 .brands-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:32px;}
 .brand-card{
   background:var(--white);border-radius:18px;border:1.5px solid var(--border);
@@ -425,16 +425,16 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
 .brand-name{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--text);margin-bottom:6px;}
 .brand-desc{font-size:11px;color:var(--muted);line-height:1.6;}
 .brand-tag{display:inline-block;margin-top:10px;padding:3px 10px;border-radius:20px;background:rgba(92,26,40,0.06);font-size:9px;letter-spacing:1px;color:var(--burg-light);text-transform:uppercase;}
- 
+
 /* ──────────────────────────────────────────
    REELS — PHONE MOCKUP CAROUSEL
 ──────────────────────────────────────────── */
 #reels{background:var(--burg);position:relative;overflow:hidden;padding:80px 0 100px;}
 #reels::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.04) 1.5px,transparent 1.5px);background-size:22px 22px;}
- 
+
 .reels-heading{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,48px);font-weight:700;color:var(--cream);margin-bottom:8px;position:relative;z-index:2;}
 .reels-sub{font-size:11px;letter-spacing:1px;color:rgba(255,255,255,.45);margin-bottom:48px;position:relative;z-index:2;}
- 
+
 /* ── CAROUSEL STAGE ── */
 .reels-stage{position:relative;z-index:2;width:100%;overflow:hidden;padding:20px 0 40px;}
 .reels-track{
@@ -443,7 +443,7 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
   will-change:transform;
   padding:0 calc(50% - 155px);
 }
- 
+
 /* ── PHONE MOCKUP ── */
 .phone-wrap{
   flex-shrink:0;
@@ -455,7 +455,7 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
 .phone-wrap.center-phone{transform:scale(1.1);z-index:5;}
 .phone-wrap.side-phone{transform:scale(0.88);opacity:.65;filter:brightness(.75);}
 .phone-wrap.far-phone{transform:scale(0.76);opacity:.4;filter:brightness(.6);}
- 
+
 /* phone frame */
 .phone-frame{
   width:260px;height:520px;
@@ -485,7 +485,7 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
 .phone-btn-r{position:absolute;top:100px;right:-3px;width:3px;height:50px;background:rgba(255,255,255,.12);border-radius:0 2px 2px 0;}
 .phone-btn-l1{position:absolute;top:80px;left:-3px;width:3px;height:28px;background:rgba(255,255,255,.1);border-radius:2px 0 0 2px;}
 .phone-btn-l2{position:absolute;top:118px;left:-3px;width:3px;height:44px;background:rgba(255,255,255,.1);border-radius:2px 0 0 2px;}
- 
+
 .phone-screen{
   position:absolute;inset:0;
   border-radius:37px;overflow:hidden;
@@ -496,14 +496,14 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
   pointer-events:none;
 }
 .phone-wrap.center-phone .phone-screen iframe{pointer-events:auto;}
- 
+
 /* screen reflection */
 .phone-glass{
   position:absolute;inset:0;border-radius:37px;
   background:linear-gradient(135deg,rgba(255,255,255,.06) 0%,transparent 50%);
   pointer-events:none;z-index:8;
 }
- 
+
 /* reel label below phone */
 .phone-label{
   text-align:center;margin-top:14px;
@@ -512,7 +512,7 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
   transition:color .3s;
 }
 .phone-wrap.center-phone .phone-label{color:rgba(255,255,255,.75);}
- 
+
 /* watch link */
 .phone-watch{
   display:block;text-align:center;margin-top:8px;
@@ -526,7 +526,7 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
 }
 .phone-wrap.center-phone .phone-watch{opacity:1;transform:translateY(0);}
 .phone-watch:hover{background:rgba(255,255,255,.15);color:rgba(255,255,255,.9);}
- 
+
 /* ── CAROUSEL CONTROLS ── */
 .reels-controls{display:flex;align-items:center;justify-content:center;gap:20px;margin-top:32px;position:relative;z-index:2;}
 .reel-prev,.reel-next{
@@ -542,7 +542,7 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
   background:rgba(255,255,255,.25);cursor:pointer;transition:all .3s;
 }
 .reel-dot.active{background:var(--gold2);width:20px;border-radius:3px;}
- 
+
 /* ──────────────────────────────────────────
    QUOTE SLIDE
 ──────────────────────────────────────────── */
@@ -551,7 +551,7 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
 .q-text{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(24px,3.5vw,42px);color:var(--text);line-height:1.4;max-width:700px;margin:0 auto 22px;padding:0 40px;}
 .q-text span{color:var(--burg);}
 .q-attr{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);}
- 
+
 /* ──────────────────────────────────────────
    VISION / GOALS
 ──────────────────────────────────────────── */
@@ -571,7 +571,7 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
 .lt-box{background:var(--burg);border-radius:18px;padding:24px;}
 .lt-label{font-size:8px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:8px;}
 .lt-text{font-size:13px;color:rgba(255,255,255,.8);line-height:1.75;}
- 
+
 /* ──────────────────────────────────────────
    LET'S CONNECT
 ──────────────────────────────────────────── */
@@ -581,11 +581,11 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
   font-size:clamp(48px,8vw,88px);color:var(--burg);line-height:.9;margin-bottom:10px;
 }
 .contact-block{font-family:'Playfair Display',serif;font-size:clamp(22px,3vw,36px);font-weight:700;color:var(--text);text-transform:uppercase;letter-spacing:3px;margin-bottom:48px;}
- 
+
 /* star deco near contact heading */
 .contact-stars{display:flex;justify-content:center;gap:8px;margin-bottom:36px;}
 .contact-stars span{font-size:18px;color:var(--burg);opacity:.5;animation:twinkle 3s ease-in-out var(--d,0s) infinite;}
- 
+
 .contact-cards{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:40px;}
 .ccard{background:var(--white);border-radius:18px;border:1.5px solid var(--border);padding:30px 34px;min-width:220px;text-align:center;text-decoration:none;transition:all .35s cubic-bezier(.34,1.4,.64,1);}
 .ccard:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(92,26,40,0.12);border-color:rgba(92,26,40,.25);}
@@ -595,14 +595,14 @@ nav.sc{background:rgba(253,248,240,0.96);backdrop-filter:blur(12px);box-shadow:0
 .ccard-hint{font-size:10px;color:var(--muted);margin-top:5px;}
 .resume-btn{display:inline-flex;align-items:center;gap:10px;padding:14px 36px;border-radius:30px;background:var(--burg);color:var(--cream);font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700;text-decoration:none;transition:all .35s;box-shadow:0 8px 24px rgba(92,26,40,.25);}
 .resume-btn:hover{background:var(--burg2);transform:translateY(-2px);}
- 
+
 /* marquee */
 .mq-wrap{overflow:hidden;white-space:nowrap;margin-top:56px;padding:16px 0;border-top:1px solid var(--border);}
 .mq-track{display:inline-flex;animation:mqanim 30s linear infinite;}
 .mq-item{display:inline-flex;align-items:center;gap:16px;padding-right:16px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:rgba(92,26,40,.2);}
 .mq-item span{color:var(--burg);font-style:normal;font-size:11px;}
 @keyframes mqanim{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
- 
+
 /* ──────────────────────────────────────────
    FOOTER
 ──────────────────────────────────────────── */
@@ -611,7 +611,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
 .fcopy{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.25);}
 .fback{font-size:10px;color:rgba(255,255,255,.35);text-decoration:none;letter-spacing:1px;transition:color .3s;}
 .fback:hover{color:var(--gold2);}
- 
+
 /* ── NEW HERO NAME ── */
 .hero-name-big{
   font-family:'Cormorant Garamond',serif;
@@ -636,9 +636,9 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
 .role-pill:nth-child(2){animation-delay:.5s;}
 .role-pill:nth-child(3){animation-delay:1s;}
 @keyframes pillFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-5px);}}
- 
+
 /* ══ MOVING ELEMENTS ══ */
- 
+
 /* 1 — Floating orbs behind everything */
 .orb{
   position:fixed;border-radius:50%;
@@ -652,11 +652,11 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
 .orb1{width:500px;height:500px;top:-100px;right:-100px;background:radial-gradient(circle,rgba(92,26,40,.18),transparent 70%);--od:20s;--dx:60px;--dy:40px;}
 .orb2{width:400px;height:400px;bottom:-80px;left:-80px;background:radial-gradient(circle,rgba(201,168,76,.1),transparent 70%);--od:16s;--dx:-40px;--dy:-50px;}
 .orb3{width:300px;height:300px;top:40%;left:30%;background:radial-gradient(circle,rgba(92,26,40,.08),transparent 70%);--od:24s;--dx:80px;--dy:-60px;}
- 
+
 /* 2 — Floating sparkle cursor trail */
 .spark{position:fixed;pointer-events:none;z-index:9999;border-radius:50%;animation:sparkFade .8s ease forwards;}
 @keyframes sparkFade{0%{opacity:.9;transform:scale(1) translate(0,0);}100%{opacity:0;transform:scale(0) translate(var(--tx),var(--ty));}}
- 
+
 /* 3 — Magnetic floating deco (sections) */
 .float-deco{
   position:absolute;pointer-events:none;
@@ -665,15 +665,15 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
   opacity:var(--fo,.18);color:var(--cream);
 }
 @keyframes floatDeco{0%,100%{transform:translateY(0) rotate(var(--r0,0deg));}50%{transform:translateY(-14px) rotate(var(--r1,6deg));}}
- 
+
 /* 4 — Animated gradient border on cards (on hover via JS class) */
 .card-glow{position:absolute;inset:-1px;border-radius:inherit;background:linear-gradient(135deg,var(--burg-light),var(--gold),var(--burg));z-index:-1;opacity:0;transition:opacity .4s;}
 .pcard:hover .card-glow,.brand-card:hover .card-glow{opacity:1;}
- 
+
 /* 5 — Typewriter cursor on hero tag */
 .tw-cursor{display:inline-block;width:2px;height:1em;background:var(--gold2);vertical-align:text-bottom;margin-left:2px;animation:blink .8s step-end infinite;}
 @keyframes blink{0%,100%{opacity:1;}50%{opacity:0;}}
- 
+
 /* 6 — Rotating star badge */
 .spinning-star{
   display:inline-flex;align-items:center;justify-content:center;
@@ -683,7 +683,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
 }
 .spinning-star svg{width:100%;height:100%;}
 @keyframes spinStar{to{transform:rotate(360deg);}}
- 
+
 /* 7 — Marquee ticker variants (upward scroll) */
 .v-ticker{
   height:200px;overflow:hidden;
@@ -695,7 +695,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
   animation:vtick 8s linear infinite;
 }
 @keyframes vtick{0%{transform:translateY(0);}100%{transform:translateY(-50%);}}
- 
+
 /* 8 — Pulsing glow ring on KPI nums */
 .kpi-glow{
   position:relative;
@@ -711,14 +711,14 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
   animation:kpiPulse 2.5s ease-in-out infinite;
 }
 @keyframes kpiPulse{0%,100%{transform:translate(-50%,-50%) scale(1);opacity:.6;}50%{transform:translate(-50%,-50%) scale(1.3);opacity:0;}}
- 
+
 /* 9 — Section entrance with slide-up & fade */
 .slide-up{
   opacity:0;transform:translateY(40px);
   transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1);
 }
 .slide-up.vis{opacity:1;transform:translateY(0);}
- 
+
 /* 10 — Wobble on hero pills */
 .role-pill:hover{
   animation:wobblePill .5s cubic-bezier(.34,1.56,.64,1);
@@ -728,7 +728,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
 .rev{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease;}
 .rev.vis{opacity:1;transform:none;}
 .d1{transition-delay:.1s;} .d2{transition-delay:.2s;} .d3{transition-delay:.3s;} .d4{transition-delay:.4s;}
- 
+
 /* ── RESPONSIVE ── */
 @media(max-width:900px){
   nav{padding:14px 20px;} .nav-links{display:none;} .hamburger{display:flex;} .nav-drawer{display:block;}
@@ -752,16 +752,16 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
 </head>
 <body>
 <div id="prog"></div>
- 
+
 <!-- background orbs -->
 <div class="orb orb1"></div>
 <div class="orb orb2"></div>
 <div class="orb orb3"></div>
- 
+
 <!-- FLOAT BTNS -->
 <button id="backtop" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
 <a href="mailto:aggsanya24@gmail.com" id="fcta">Hire Me</a>
- 
+
 <!-- MODAL -->
 <div class="modal-overlay" id="modal">
   <div class="mbox">
@@ -785,7 +785,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
     </div>
   </div>
 </div>
- 
+
 <!-- NAV -->
 <nav id="nav">
   <div class="nav-logo">Sanya Aggarwal</div>
@@ -807,7 +807,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
     <li><a href="#contact" class="dl">Let's Talk</a></li>
   </ul>
 </div>
- 
+
 <!-- ═══ HERO ═══ -->
 <section id="hero">
   <!-- stars -->
@@ -815,7 +815,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
   <div class="hero-star hs3">✦</div><div class="hero-star hs4">★</div>
   <div class="hero-star hs5">✦</div><div class="hero-star hs6">★</div>
   <div class="hero-star hs7">✦</div><div class="hero-star hs8">★</div>
- 
+
   <div class="hero-inner">
     <p class="hero-sub">Growth & Marketing</p>
     <h1 class="hero-name-big">Sanya<span>Aggarwal</span></h1>
@@ -824,9 +824,9 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
       <span class="role-pill">🎯 Campaign Strategist</span>
       <span class="role-pill">✨ Open to Opportunities</span>
     </div>
-    <div class="hero-name-tag">Data-driven marketer · 40+ campaigns · 1M+ registrations</div>
+    <div class="hero-name-tag">Data-driven marketer · 50+ campaigns · 1M+ registrations</div>
     <div class="hero-stats">
-      <div class="hstat"><div class="hstat-num"><span class="cu" data-t="40">0</span>+</div><div class="hstat-label">Campaigns</div></div>
+      <div class="hstat"><div class="hstat-num"><span class="cu" data-t="50">0</span>+</div><div class="hstat-label">Campaigns</div></div>
       <div class="hstat"><div class="hstat-num"><span class="cu" data-t="10">0</span>+</div><div class="hstat-label">Brands</div></div>
       <div class="hstat"><div class="hstat-num"><span class="cu" data-t="1">0</span>M+</div><div class="hstat-label">Registrations</div></div>
       <div class="hstat"><div class="hstat-num">100%</div><div class="hstat-label">Hit Rate</div></div>
@@ -838,7 +838,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
   </div>
   <div class="scroll-hint"><div class="scroll-line"></div>Scroll</div>
 </section>
- 
+
 <!-- TICKER -->
 <div class="ticker">
   <div class="tick-track">
@@ -846,7 +846,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
     <span class="tick-item">L'Oréal <em>★</em></span><span class="tick-item">EY <em>★</em></span><span class="tick-item">Myntra <em>★</em></span><span class="tick-item">Reliance <em>★</em></span><span class="tick-item">HPCL <em>★</em></span><span class="tick-item">Google <em>★</em></span><span class="tick-item">Economic Times <em>★</em></span><span class="tick-item">Deconstruct <em>★</em></span><span class="tick-item">MoEngage <em>★</em></span>
   </div>
 </div>
- 
+
 <!-- ═══ ABOUT ═══ -->
 <section id="about" class="slide" style="position:relative;overflow:hidden;">
   <!-- floating deco -->
@@ -858,7 +858,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
     <div class="about-layout">
       <div class="about-text rev d1">
         <h2>A little bit<br><em>about me.</em></h2>
-        <p>Since launching my career, I've driven <strong>40+ national-level campaigns</strong> with a results-first approach. While pursuing my education, I discovered my passion for growth marketing — building strategies that feel personal but scale like machines.</p>
+        <p>Since launching my career, I've driven <strong>50+ national-level campaigns</strong> with a results-first approach. While pursuing my education, I discovered my passion for growth marketing — building strategies that feel personal but scale like machines.</p>
         <p>My experience spans <strong>email automation, influencer marketing, community outreach</strong>, and performance tracking. I balance data and creativity to craft campaigns that convert — and I always go above target.</p>
         <p>I'm not just building campaigns — I'm building toward a career defined by <strong>data-backed growth strategy at scale</strong>.</p>
         <div class="about-tags" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;">
@@ -873,7 +873,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
       <div class="why-me-card rev d2">
         <div class="wm-title">Why Me? ★</div>
         <ul class="wm-list">
-          <li><div class="wm-check">✓</div>1+ year driving 40+ national campaigns across India's top brands.</li>
+          <li><div class="wm-check">✓</div>1+ year driving 50+ national campaigns across India's top brands.</li>
           <li><div class="wm-check">✓</div>100% target hit rate — every single campaign delivered results.</li>
           <li><div class="wm-check">✓</div>Skilled in multi-channel execution: email, push, influencer, community & WhatsApp.</li>
           <li><div class="wm-check">✓</div>Experience with marquee brands: L'Oréal, EY, Myntra, Reliance, HPCL & more.</li>
@@ -883,7 +883,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
     </div>
   </div>
 </section>
- 
+
 <!-- ═══ WHAT'S IN MY BAG ═══ -->
 <section id="skills" class="slide">
   <div class="slide-inner skills-inner">
@@ -892,7 +892,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
     </div>
     <h2 class="skills-heading rev">What's In My Bag</h2>
     <p class="skills-sub rev d1">hover over each skill to explore</p>
- 
+
     <div class="bag-diagram-wrap rev d2">
       <!-- connector lines -->
       <svg class="connector-svg" viewBox="0 0 860 480" preserveAspectRatio="none">
@@ -905,7 +905,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
         <line x1="430" y1="240" x2="330" y2="468"/>
         <line x1="430" y1="240" x2="760" y2="440"/>
       </svg>
- 
+
       <!-- skill nodes -->
       <div class="skill-node sn-1">📧 Email Automation</div>
       <div class="skill-node sn-2">📈 Growth Marketing</div>
@@ -915,7 +915,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
       <div class="skill-node sn-6">🌸 Community Building</div>
       <div class="skill-node sn-7">🔁 Referral Loops</div>
       <div class="skill-node sn-8">✍️ Content Strategy</div>
- 
+
       <!-- THE GORGEOUS GIRLY BAG SVG -->
       <div class="bag-svg-wrap">
         <svg viewBox="0 0 240 280" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -976,7 +976,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
               <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.3)"/>
             </filter>
           </defs>
- 
+
           <!-- ── CHAIN STRAP ── -->
           <g filter="url(#chainDrop)" opacity=".9">
             <!-- left chain loop -->
@@ -992,11 +992,11 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
             <ellipse cx="135" cy="37" rx="6" ry="3.5" stroke="url(#chainG)" stroke-width="2.5" fill="none" transform="rotate(10 135 37)"/>
             <ellipse cx="124" cy="35" rx="6" ry="3.5" stroke="url(#chainG)" stroke-width="2.5" fill="none" transform="rotate(0 124 35)"/>
           </g>
- 
+
           <!-- ── CHAIN RINGS attaching to bag ── -->
           <rect x="60" y="148" width="12" height="8" rx="4" fill="#c9a84c" stroke="#a07830" stroke-width="1"/>
           <rect x="168" y="148" width="12" height="8" rx="4" fill="#c9a84c" stroke="#a07830" stroke-width="1"/>
- 
+
           <!-- ── MAIN BAG BODY ── -->
           <g filter="url(#bagDrop)">
             <!-- 3D side left -->
@@ -1035,7 +1035,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
             <!-- left light streak -->
             <rect x="38" y="162" width="12" height="72" rx="6" fill="rgba(255,255,255,0.07)" transform="skewX(-4)"/>
           </g>
- 
+
           <!-- ── FLAP ── -->
           <g filter="url(#bagDrop)">
             <path d="M30 160 Q30 88 120 78 Q210 88 210 160 Z" fill="url(#flapG)"/>
@@ -1052,7 +1052,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
             <!-- flap light streak -->
             <path d="M44 148 Q42 108 72 92" stroke="rgba(255,255,255,0.18)" stroke-width="10" stroke-linecap="round" fill="none"/>
           </g>
- 
+
           <!-- ── FLAP FLORAL EMBELLISHMENT (monogram area) ── -->
           <!-- centre flower cluster -->
           <g transform="translate(120, 128)">
@@ -1096,7 +1096,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
           <ellipse cx="137" cy="126" rx="3" ry="7" fill="#7a9a5a" opacity=".5" transform="rotate(30 137 126)"/>
           <ellipse cx="108" cy="140" rx="2.5" ry="6" fill="#7a9a5a" opacity=".4" transform="rotate(-45 108 140)"/>
           <ellipse cx="132" cy="140" rx="2.5" ry="6" fill="#7a9a5a" opacity=".4" transform="rotate(45 132 140)"/>
- 
+
           <!-- ── CLASP ── -->
           <g filter="url(#claspDrop)">
             <!-- clasp base plate -->
@@ -1112,20 +1112,20 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
             <circle cx="128" cy="161" r="2" fill="#c9a84c"/>
             <circle cx="127" cy="160" r="1" fill="rgba(255,255,255,0.6)"/>
           </g>
- 
+
           <!-- ── BOTTOM FEET (gold studs) ── -->
           <circle cx="52" cy="242" r="4" fill="url(#claspG)" stroke="#a07830" stroke-width=".5"/>
           <circle cx="188" cy="242" r="4" fill="url(#claspG)" stroke="#a07830" stroke-width=".5"/>
           <circle cx="52" cy="242" r="2" fill="rgba(255,255,255,0.4)"/>
           <circle cx="188" cy="242" r="2" fill="rgba(255,255,255,0.4)"/>
- 
+
           <!-- ── LOGO INITIALS on front pocket ── -->
           <text x="120" y="210" font-family="'Cormorant Garamond', Georgia, serif" font-size="20" font-style="italic" font-weight="600" fill="rgba(255,255,255,0.15)" text-anchor="middle" letter-spacing="3">SA</text>
         </svg>
         <div class="bag-label-center">What's In My Bag ✦</div>
       </div>
     </div>
- 
+
     <!-- proficiency bars -->
     <div class="skill-bars rev d3">
       <div id="bars">
@@ -1138,7 +1138,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
     </div>
   </div>
 </section>
- 
+
 <!-- ═══ PROCESS ═══ -->
 <section id="process" class="slide">
   <div class="slide-inner">
@@ -1171,7 +1171,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
     </div>
   </div>
 </section>
- 
+
 <!-- ═══ CAMPAIGNS ═══ -->
 <section id="projects" class="slide">
   <div class="slide-inner">
@@ -1208,7 +1208,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
     </div>
   </div>
 </section>
- 
+
 <!-- ═══ BRANDS ═══ -->
 <section id="brands" class="slide">
   <div class="slide-inner">
@@ -1227,7 +1227,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
     </div>
   </div>
 </section>
- 
+
 <!-- ═══ REELS ═══ -->
 <section id="reels" class="slide">
   <div class="slide-inner">
@@ -1235,11 +1235,11 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
     <h2 class="reels-heading rev">Campaign Reels</h2>
     <p class="reels-sub rev d1">Swipe through — 6 live campaign reels</p>
   </div>
- 
+
   <!-- PHONE CAROUSEL -->
   <div class="reels-stage">
     <div class="reels-track" id="reelsTrack">
- 
+
       <div class="phone-wrap" data-idx="0">
         <div class="phone-frame">
           <div class="phone-btn-r"></div>
@@ -1253,7 +1253,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
         <div class="phone-label">Campaign Reel 01</div>
         <a href="https://www.instagram.com/reel/DXuF-DMkyLN/?igsh=MXJuNmJldXUzcWR2cQ==" target="_blank" class="phone-watch">Watch on Instagram ↗</a>
       </div>
- 
+
       <div class="phone-wrap" data-idx="1">
         <div class="phone-frame">
           <div class="phone-btn-r"></div>
@@ -1267,7 +1267,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
         <div class="phone-label">Campaign Reel 02</div>
         <a href="https://www.instagram.com/reel/DQeQFCbESaY/?igsh=MWMzd3c3OG13djFj" target="_blank" class="phone-watch">Watch on Instagram ↗</a>
       </div>
- 
+
       <div class="phone-wrap" data-idx="2">
         <div class="phone-frame">
           <div class="phone-btn-r"></div>
@@ -1281,7 +1281,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
         <div class="phone-label">Campaign Reel 03</div>
         <a href="https://www.instagram.com/reel/DMaH5FHxm5c/?igsh=bHBtYW9hZWhzenMz" target="_blank" class="phone-watch">Watch on Instagram ↗</a>
       </div>
- 
+
       <div class="phone-wrap" data-idx="3">
         <div class="phone-frame">
           <div class="phone-btn-r"></div>
@@ -1295,7 +1295,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
         <div class="phone-label">Campaign Reel 04</div>
         <a href="https://www.instagram.com/reel/DN0MGAXYuB_/" target="_blank" class="phone-watch">Watch on Instagram ↗</a>
       </div>
- 
+
       <div class="phone-wrap" data-idx="4">
         <div class="phone-frame">
           <div class="phone-btn-r"></div>
@@ -1309,7 +1309,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
         <div class="phone-label">Campaign Reel 05</div>
         <a href="https://www.instagram.com/reel/DPBi7svEZG1/" target="_blank" class="phone-watch">Watch on Instagram ↗</a>
       </div>
- 
+
       <div class="phone-wrap" data-idx="5">
         <div class="phone-frame">
           <div class="phone-btn-r"></div>
@@ -1323,10 +1323,10 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
         <div class="phone-label">Campaign Reel 06</div>
         <a href="https://www.instagram.com/reel/DPyIsUjCHPY/" target="_blank" class="phone-watch">Watch on Instagram ↗</a>
       </div>
- 
+
     </div>
   </div>
- 
+
   <!-- Controls -->
   <div class="reels-controls">
     <button class="reel-prev" id="reelPrev">←</button>
@@ -1342,7 +1342,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
   </div>
   <div class="lace-bottom"></div>
 </section>
- 
+
 <!-- ═══ GOALS ═══ -->
 <section id="goals" class="slide">
   <div class="slide-inner">
@@ -1350,7 +1350,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
     <h2 class="slide-title rev d1">The next <em>chapter</em></h2>
     <div class="goals-grid rev d2">
       <div class="goal-list-card">
-        <div class="goal-row"><div class="gnum">01</div><div class="gtext">Deepen expertise in performance marketing and scalable acquisition strategies</div></div>
+        <div class="goal-row"><div class="gnum">01</div><div class="gtext">Deepen expertise in social media marketing and building scalable brand presence</div></div>
         <div class="goal-row"><div class="gnum">02</div><div class="gtext">Build advanced capabilities in lifecycle marketing, automation, and funnel optimisation</div></div>
         <div class="goal-row"><div class="gnum">03</div><div class="gtext">Lead end-to-end growth strategy for enterprise brands with measurable, lasting impact</div></div>
         <div class="goal-row"><div class="gnum">04</div><div class="gtext">Own the full acquisition funnel and drive data-backed decisions at scale</div></div>
@@ -1362,13 +1362,13 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
         </div>
         <div class="lt-box">
           <div class="lt-label">★ Long-Term Goal</div>
-          <div class="lt-text">Transition into a Growth Strategy role where I drive data-backed decisions and large-scale campaign execution for enterprise brands.</div>
+          <div class="lt-text">Transition into a Brand Marketing role where I shape brand narratives, drive integrated campaigns, and build powerful brand equity for enterprise brands.</div>
         </div>
       </div>
     </div>
   </div>
 </section>
- 
+
 <!-- ═══ CONTACT ═══ -->
 <section id="contact" class="slide">
   <div class="slide-inner">
@@ -1377,7 +1377,7 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
     </div>
     <h2 class="contact-script rev">Let's Connect</h2>
     <p class="contact-block rev d1">Get In Touch</p>
-    <p class="rev d2" style="font-size:14px;color:var(--muted);font-weight:300;margin-bottom:48px;">Open to growth marketing, campaign strategy, and performance roles.</p>
+    <p class="rev d2" style="font-size:14px;color:var(--muted);font-weight:300;margin-bottom:48px;">Open to marketing, campaign and PR roles.</p>
     <div class="contact-cards rev d2">
       <a href="mailto:aggsanya24@gmail.com" class="ccard">
         <div class="ccard-icon">📧</div>
@@ -1403,13 +1403,13 @@ footer{background:var(--burg);padding:32px 48px;display:flex;justify-content:spa
     </div>
   </div>
 </section>
- 
+
 <footer>
   <div class="flogo">Sanya Aggarwal</div>
   <div class="fcopy">© 2026 — Growth & Marketing</div>
   <a href="#hero" class="fback">↑ Back to top</a>
 </footer>
- 
+
 <script>
 const PD={
   dec:{brand:'Deconstruct',title:'Skincare Internship Season 2',role:'Audience Segmentation · Email & Push Marketing · Influencer Network',desc:'Managed the complete campaign lifecycle — email drip sequences, push notification workflows, influencer partnerships, and constant performance analysis to optimise open rates and drive maximum registrations.',channels:['📧 Email Drip Sequences','🔔 Push Notification Flows','👥 Influencer Network Activation','📊 Audience Segmentation','🔁 Re-engagement Campaigns'],num:'2,40,000+',res:'Registrations — surpassing the 2L target significantly.',metrics:['2.4L+ Registrations','2× Target Exceeded','6+ Channels']},
@@ -1419,7 +1419,7 @@ const PD={
   wfs:{brand:'Myntra',title:'HackerRamp WeForShe 2025',role:'Community Outreach · Email · Campus Ambassadors',desc:'Community-first acquisition strategy for Myntra\'s women-in-tech competition. Coordinated campus ambassador programmes and built segmented email campaigns.',channels:['🤝 Campus Ambassador Programme','📧 Segmented Email Campaigns','📣 Organic Social Strategy','🎓 Women-in-Tech Community Outreach'],num:'50,000+',res:'Registrations — target exceeded.',metrics:['50K+ Registrations','Target Exceeded','Top Channel: Community']},
   etril:{brand:'Economic Times · Reliance',title:'ET Gen AI + RIL GET',role:'Email Marketing · WhatsApp Campaigns · Webinar Funnels',desc:'Parallel campaigns for two marquee brands. ET Gen AI Hackathon: tech-focused email sequences. Reliance GET Programme: email + WhatsApp funnel with webinar touchpoints.',channels:['📧 Email Marketing Sequences','📱 WhatsApp Broadcast Campaigns','🎙️ Webinar Acquisition Funnels','🎓 Engineering College Outreach'],num:'1,20,000+',res:'Combined registrations — both targets met.',metrics:['1.2L+ Combined Regs','ET Hackathon: 54K+','RIL GET: 78K+']}
 };
- 
+
 /* ── SPARKLE CURSOR TRAIL ── */
 const sparkColors=['#c9a84c','#e8c97a','#fdf8f0','#c4556a','#f0e0c8'];
 let lastTrail=0;
@@ -1434,7 +1434,7 @@ document.addEventListener('mousemove',e=>{
   document.body.appendChild(s);
   setTimeout(()=>s.remove(),800);
 });
- 
+
 /* ── CLICK BURST ── */
 document.addEventListener('click',e=>{
   for(let i=0;i<10;i++){
@@ -1446,7 +1446,7 @@ document.addEventListener('click',e=>{
     setTimeout(()=>s.remove(),900);
   }
 });
- 
+
 /* ── SCROLL ── */
 function onScroll(){
   const sy=window.scrollY,h=document.body.scrollHeight-innerHeight;
@@ -1461,20 +1461,20 @@ function onScroll(){
   });
 }
 window.addEventListener('scroll',onScroll,{passive:true});onScroll();
- 
+
 /* ── HAMBURGER ── */
 const ham=document.getElementById('hamburger'),drw=document.getElementById('drawer');
 if(ham)ham.addEventListener('click',()=>drw.classList.toggle('open'));
 document.querySelectorAll('.dl').forEach(a=>a.addEventListener('click',()=>drw.classList.remove('open')));
- 
+
 /* ── REVEAL ── */
 const obs=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting){en.target.classList.add('vis');obs.unobserve(en.target);}});},{threshold:.08});
 document.querySelectorAll('.rev,.slide-up').forEach(el=>obs.observe(el));
- 
+
 /* ── SKILL BARS ── */
 const bObs=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting){en.target.querySelectorAll('.bar-fill').forEach(f=>{f.style.transition='width 1.8s cubic-bezier(.25,.46,.45,.94)';f.style.width=f.dataset.w+'%';});bObs.unobserve(en.target);}});},{threshold:.3});
 const bEl=document.getElementById('bars');if(bEl)bObs.observe(bEl);
- 
+
 /* ── FILTER ── */
 document.querySelectorAll('.ftab').forEach(tab=>{
   tab.addEventListener('click',()=>{
@@ -1484,7 +1484,7 @@ document.querySelectorAll('.ftab').forEach(tab=>{
     document.querySelectorAll('.pcard').forEach(c=>c.classList.toggle('hidden',f!=='all'&&!(c.dataset.tags||'').includes(f)));
   });
 });
- 
+
 /* ── 3D TILT on cards ── */
 document.querySelectorAll('.pcard,.brand-card,.ccard,.pstep,.why-me-card').forEach(card=>{
   card.addEventListener('mousemove',e=>{
@@ -1501,7 +1501,7 @@ document.querySelectorAll('.pcard,.brand-card,.ccard,.pstep,.why-me-card').forEa
     card.style.transition='transform .5s cubic-bezier(.34,1.56,.64,1), box-shadow .4s';
   });
 });
- 
+
 /* ── TYPEWRITER on hero tag ── */
 const tw=document.querySelector('.hero-name-tag');
 if(tw){
@@ -1513,7 +1513,7 @@ if(tw){
   const type=()=>{if(i<txt.length){twText.textContent+=txt[i++];setTimeout(type,40);}};
   setTimeout(type,800);
 }
- 
+
 /* ── MODAL ── */
 const overlay=document.getElementById('modal'),mc=document.getElementById('mclose');
 function openM(k){
@@ -1533,7 +1533,7 @@ mc.addEventListener('click',closeM);
 overlay.addEventListener('click',e=>{if(e.target===overlay)closeM();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeM();});
 document.querySelectorAll('.pcard').forEach(c=>c.addEventListener('click',()=>openM(c.dataset.p)));
- 
+
 /* ── COUNT UP ── */
 function countUp(el,t){
   let s=null;
@@ -1546,7 +1546,7 @@ function countUp(el,t){
 }
 const cuObs=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting){countUp(en.target,parseInt(en.target.dataset.t));cuObs.unobserve(en.target);}});},{threshold:.5});
 document.querySelectorAll('.cu').forEach(el=>cuObs.observe(el));
- 
+
 /* ── FLOATING DECO MOUSE PARALLAX ── */
 document.addEventListener('mousemove',e=>{
   const cx=e.clientX/window.innerWidth-.5;
@@ -1556,7 +1556,7 @@ document.addEventListener('mousemove',e=>{
     el.style.transform=`translate(${cx*depth}px,${cy*depth}px)`;
   });
 });
- 
+
 /* ── ANIMATED GRADIENT on hero name ── */
 let hue=0;
 const heroName=document.querySelector('.hero-name-big span');
@@ -1566,7 +1566,7 @@ if(heroName){
     heroName.style.textShadow=`0 0 40px hsla(${hue},70%,70%,.25)`;
   },50);
 }
- 
+
 /* ── PHONE CAROUSEL ── */
 (function(){
   const track = document.getElementById('reelsTrack');
@@ -1576,11 +1576,11 @@ if(heroName){
   const next = document.getElementById('reelNext');
   const total = phones.length;
   let cur = 0;
- 
+
   const CARD_W = 260;
   const GAP = 28;
   const STEP = CARD_W + GAP;
- 
+
   function updateClasses(){
     phones.forEach((p,i)=>{
       p.classList.remove('center-phone','side-phone','far-phone');
@@ -1598,23 +1598,23 @@ if(heroName){
     track.style.transform = `translateX(${offset}px)`;
     track.style.transition = 'transform .6s cubic-bezier(.22,1,.36,1)';
   }
- 
+
   function goTo(idx){
     cur = (idx + total) % total;
     updateClasses();
   }
- 
+
   prev.addEventListener('click', ()=> goTo(cur - 1));
   next.addEventListener('click', ()=> goTo(cur + 1));
   dots.forEach((d,i)=> d.addEventListener('click', ()=> goTo(i)));
- 
+
   // click side phones to navigate
   phones.forEach((p,i)=>{
     p.addEventListener('click', ()=>{
       if(i !== cur) goTo(i);
     });
   });
- 
+
   // touch/drag swipe
   let startX = 0;
   track.addEventListener('touchstart', e=>{ startX = e.touches[0].clientX; },{passive:true});
@@ -1622,7 +1622,7 @@ if(heroName){
     const dx = e.changedTouches[0].clientX - startX;
     if(Math.abs(dx) > 50) goTo(dx < 0 ? cur+1 : cur-1);
   });
- 
+
   // mouse drag
   let isDragging = false, dragStart = 0;
   track.addEventListener('mousedown', e=>{ isDragging=true; dragStart=e.clientX; track.style.transition='none'; });
@@ -1633,13 +1633,13 @@ if(heroName){
     if(Math.abs(dx) > 60) goTo(dx < 0 ? cur+1 : cur-1);
     else updateClasses();
   });
- 
+
   // init
   updateClasses();
- 
+
   // auto-advance every 5s
   setInterval(()=> goTo(cur+1), 5000);
- 
+
   // recalc on resize
   window.addEventListener('resize', updateClasses);
 })();
@@ -1657,4 +1657,3 @@ psteps.forEach(el=>{el.style.opacity='0';el.style.transform='translateX(20px)';e
 </script>
 </body>
 </html>
- 
